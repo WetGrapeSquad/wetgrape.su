@@ -1,0 +1,21 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+header{
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vh - 85px);
+}
+.buttons{
+    margin-top: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Candara';
+    color: #dddff6;
+    background-color: #536ee0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
