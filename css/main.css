@@ -4,16 +4,23 @@
 }
 head{
     height: 0px;
-    overflow: hidden;
 }
 body{
-    width: 100%;
     margin: 0;
 }
 header{
     background-size: cover;
     width: 100%;
     height: calc(100vh - 85px);
+}
+.button{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Candara';
+    color: #dddff6;
+    background-color: #536ee0;
+    border-radius: 5px;
+    padding: 10px;
 }
 .buttons{
     margin-top: 25px;
@@ -26,4 +33,7 @@ header{
     padding: 10px;
     margin-left: 22px;
     margin-right: 22px;
+}
+.buttons:hover, .buttons2:hover, .button:hover{
+    background-color: #5e6ee0;
 }
