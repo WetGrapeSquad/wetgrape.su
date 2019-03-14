@@ -3,6 +3,7 @@
     display: block;
 }
 head{
+    opacity: 0;
     height: 0px;
 }
 body{
