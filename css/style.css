@@ -1,11 +1,15 @@
 .hi-block{
+    box-shadow: -1px -12px 81px -12px rgba(0,0,0,0.75);
     text-align: center;
     background-color: #ededed;
     display: grid;
-    grid-template-columns: 1fr 222px 1fr 222px 1fr 222px 1fr;
+    grid-template-columns: 1fr  1fr 1fr;
     padding-bottom: 40px;
 }
 .hi-block>.item{
+    width: 222px;
+    margin-left: auto;
+    margin-right: auto;
     color: #101129;
     font-family: 'Calibri';
     font-weight: 100;
@@ -22,21 +26,23 @@
 }
 .hi-block>.item>h4{
     color: #737373;
+    height: 100px;
     margin: 0;
     font-size: 18px;
 }
 .preview {
+    height: 50vh;
     background-position: center;
-    height: 350px;
+
     width: 100%;
 }
 .inner-preview{
     padding-top: 70px;
     text-align: center;
     width: 100%;
-    height: 350px;
+    height: 50vh;
     background-color: rgba(0, 0, 0, 0.25);
-    padding-left: calc(100% - 500px);
+    padding-left: calc(50% - 175px);
 }
 .inner-preview>hr{
     margin: 10px;
@@ -82,9 +88,14 @@
 }
 .fuv-team>.inner-fav{
     display: grid;
-    grid-template-columns: 1fr 160px 1fr 160px 1fr 160px 1fr 160px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     padding-bottom: 50px;
+}
+.fuv-team>.inner-fav>.item{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .fuv-team{
     padding-top: 25px;
@@ -115,4 +126,112 @@
     font-family: 'Arial';
     font-weight: 100;
     color: #737373;
+}
+
+.donate {
+    width: 100%;
+    height: 100px;
+    background-color: #8597e4;
+    color: #f1f1f1;
+}
+.donate>.buttons{
+    margin: 0;
+    width: 200px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 50px;
+    background-color: #e2907a;
+}
+.donate>.buttons:hover{
+    background-color: #e38c75;
+}
+.donate>h1{
+    font-weight: 100;
+    width: 880px;
+    font-family: 'Candara';
+    margin: 0px;
+    padding-top: 38px;
+    padding-left: 50px;
+    font-size: 24px;
+}
+footer{
+    height: 80px;
+    background-color: #3a3a3a;
+    color: #919191;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Candara'
+}
+
+@media screen and (max-width: 1130px){
+    .hi-block{
+        grid-template-columns: 1fr;
+    }
+    .hi-block>.item{
+        margin-left: auto;
+        margin-right: auto;
+        width: 222px;
+        margin-top: 40px;
+    }
+    .fuv-team>.inner-fav{
+        grid-template-columns: 1fr 1fr;
+    }
+    .donate{
+        height: 220px;
+    }
+    .donate>h1{
+        width: 100%;
+        font-weight: 100;
+        text-align: center;
+        font-family: 'Candara';
+        margin: 0px;
+        padding-top: 38px;
+        padding-left: 50px;
+        font-size: 24px;
+    }
+    .donate>.buttons{
+        width: 220px;
+        display: block;
+        margin-top: 38px;
+        margin-right: calc(50% - 130px);
+        margin-left: auto;
+        background-color: #e2907a;
+    }
+}
+
+@media screen and (max-width: 7cm){
+    .hi-block{
+        grid-template-columns: 1fr;
+    }
+    .hi-block>.item{
+        margin-left: auto;
+        margin-right: auto;
+        width: 222px;
+        margin-top: 40px;
+    }
+    .fuv-team>.inner-fav{
+        grid-template-columns: 1fr 1fr;
+    }
+    .donate{
+        height: 220px;
+    }
+    .donate>h1{
+        width: 100%;
+        font-weight: 100;
+        text-align: center;
+        font-family: 'Candara';
+        margin: 0px;
+        padding-top: 38px;
+        padding-left: 50px;
+        font-size: 24px;
+    }
+    .donate>.buttons{
+        width: 220px;
+        display: block;
+        margin-top: 38px;
+        margin-right: calc(50% - 130px);
+        margin-left: auto;
+        background-color: #e2907a;
+    }
 }
